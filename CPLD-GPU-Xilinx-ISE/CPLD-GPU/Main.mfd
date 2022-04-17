@@ -1,0 +1,11 @@
+MDF Database:  version 1.0
+MDF_INFO | Main | XC9572XL-10-TQ100
+MACROCELL | 2 | 2 | TEST_OBUF$BUF0
+ATTRIBUTES | 264962 | 0
+INPUTS | 1 | CLK
+INPUTP | 1 | 20
+EQ | 1 | 
+   TEST = CLK;
+
+PIN | CLK | 64 | 0 | N/A | 20 | 1 | 2 | 2
+PIN | TEST | 536871040 | 0 | N/A | 43

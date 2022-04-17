@@ -1,0 +1,329 @@
+ 
+cpldfit:  version P.20131013                        Xilinx Inc.
+                                  Fitter Report
+Design Name: Main                                Date: 11-24-2021, 12:36PM
+Device Used: XC9572XL-10-TQ100
+Fitting Status: Successful
+
+*************************  Mapped Resource Summary  **************************
+
+Macrocells     Product Terms    Function Block   Registers      Pins           
+Used/Tot       Used/Tot         Inps Used/Tot    Used/Tot       Used/Tot       
+1  /72  (  1%) 1   /360  (  1%) 1  /216 (  1%)   0  /72  (  0%) 2  /72  (  3%)
+
+** Function Block Resources **
+
+Function    Mcells      FB Inps     Pterms      IO          
+Block       Used/Tot    Used/Tot    Used/Tot    Used/Tot    
+FB1           0/18        0/54        0/90       1/18
+FB2           0/18        0/54        0/90       0/18
+FB3           1/18        1/54        1/90       1/18
+FB4           0/18        0/54        0/90       0/18
+             -----       -----       -----      -----    
+              1/72        1/216       1/360      2/72 
+
+* - Resource is exhausted
+
+** Global Control Resources **
+
+Global clock net(s) unused.
+Global output enable net(s) unused.
+Global set/reset net(s) unused.
+
+** Pin Resources **
+
+Signal Type    Required     Mapped  |  Pin Type            Used    Total 
+------------------------------------|------------------------------------
+Input         :    1           1    |  I/O              :     1      66
+Output        :    1           1    |  GCK/IO           :     1       3
+Bidirectional :    0           0    |  GTS/IO           :     0       2
+GCK           :    0           0    |  GSR/IO           :     0       1
+GTS           :    0           0    |
+GSR           :    0           0    |
+                 ----        ----
+        Total      2           2
+
+** Power Data **
+
+There are 1 macrocells in high performance mode (MCHP).
+There are 0 macrocells in low power mode (MCLP).
+End of Mapped Resource Summary
+**************************  Errors and Warnings  ***************************
+
+WARNING:Cpld - Unable to retrieve the path to the iSE Project Repository. Will
+   use the default filename of 'Main.ise'.
+INFO:Cpld - Inferring BUFG constraint for signal 'CLK' based upon the LOC
+   constraint 'P22'. It is recommended that you declare this BUFG explicitedly
+   in your design. Note that for certain device families the output of a BUFG
+   constraint can not drive a gated clock, and the BUFG constraint will be
+   ignored.
+WARNING:Cpld:1239 - The global clock designation (BUFG) on signal 'TEST_OBUF' is
+   ignored. Most likely the signal is gated and therefore cannot be used as a
+   global control signal.
+*************************  Summary of Mapped Logic  ************************
+
+** 1 Outputs **
+
+Signal              Total Total Loc     Pin  Pin     Pin     Pwr  Slew Reg Init
+Name                Pts   Inps          No.  Type    Use     Mode Rate State
+TEST                1     1     FB3_3   49   I/O     O       STD  FAST 
+
+** 1 Inputs **
+
+Signal              Loc     Pin  Pin     Pin     
+Name                        No.  Type    Use     
+CLK                 FB1_9   22   GCK/I/O I
+
+Legend:
+Pin No. - ~ - User Assigned
+**************************  Function Block Details  ************************
+Legend:
+Total Pt     - Total product terms used by the macrocell signal
+Imp Pt       - Product terms imported from other macrocells
+Exp Pt       - Product terms exported to other macrocells
+               in direction shown
+Unused Pt    - Unused local product terms remaining in macrocell
+Loc          - Location where logic was mapped in device
+Pin Type/Use - I  - Input             GCK - Global Clock
+               O  - Output            GTS - Global Output Enable
+              (b) - Buried macrocell  GSR - Global Set/Reset
+X            - Signal used as input to the macrocell logic.
+Pin No.      - ~  - User Assigned
+*********************************** FB1  ***********************************
+Number of function block inputs used/remaining:               0/54
+Number of signals used by logic mapping into function block:  0
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB1_1   16    I/O     
+(unused)              0       0     0   5     FB1_2   13    I/O     
+(unused)              0       0     0   5     FB1_3   18    I/O     
+(unused)              0       0     0   5     FB1_4   20    I/O     
+(unused)              0       0     0   5     FB1_5   14    I/O     
+(unused)              0       0     0   5     FB1_6   15    I/O     
+(unused)              0       0     0   5     FB1_7   25    I/O     
+(unused)              0       0     0   5     FB1_8   17    I/O     
+(unused)              0       0     0   5     FB1_9   22    GCK/I/O I
+(unused)              0       0     0   5     FB1_10  28    I/O     
+(unused)              0       0     0   5     FB1_11  23    GCK/I/O 
+(unused)              0       0     0   5     FB1_12  33    I/O     
+(unused)              0       0     0   5     FB1_13  36    I/O     
+(unused)              0       0     0   5     FB1_14  27    GCK/I/O 
+(unused)              0       0     0   5     FB1_15  29    I/O     
+(unused)              0       0     0   5     FB1_16  39    I/O     
+(unused)              0       0     0   5     FB1_17  30    I/O     
+(unused)              0       0     0   5     FB1_18  40    I/O     
+*********************************** FB2  ***********************************
+Number of function block inputs used/remaining:               0/54
+Number of signals used by logic mapping into function block:  0
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB2_1   87    I/O     
+(unused)              0       0     0   5     FB2_2   94    I/O     
+(unused)              0       0     0   5     FB2_3   91    I/O     
+(unused)              0       0     0   5     FB2_4   93    I/O     
+(unused)              0       0     0   5     FB2_5   95    I/O     
+(unused)              0       0     0   5     FB2_6   96    I/O     
+(unused)              0       0     0   5     FB2_7   3     GTS/I/O 
+(unused)              0       0     0   5     FB2_8   97    I/O     
+(unused)              0       0     0   5     FB2_9   99    GSR/I/O 
+(unused)              0       0     0   5     FB2_10  1     I/O     
+(unused)              0       0     0   5     FB2_11  4     GTS/I/O 
+(unused)              0       0     0   5     FB2_12  6     I/O     
+(unused)              0       0     0   5     FB2_13  8     I/O     
+(unused)              0       0     0   5     FB2_14  9     I/O     
+(unused)              0       0     0   5     FB2_15  11    I/O     
+(unused)              0       0     0   5     FB2_16  10    I/O     
+(unused)              0       0     0   5     FB2_17  12    I/O     
+(unused)              0       0     0   5     FB2_18  92    I/O     
+*********************************** FB3  ***********************************
+Number of function block inputs used/remaining:               1/53
+Number of signals used by logic mapping into function block:  1
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB3_1   41    I/O     
+(unused)              0       0     0   5     FB3_2   32    I/O     
+TEST                  1       0     0   4     FB3_3   49    I/O     O
+(unused)              0       0     0   5     FB3_4   50    I/O     
+(unused)              0       0     0   5     FB3_5   35    I/O     
+(unused)              0       0     0   5     FB3_6   53    I/O     
+(unused)              0       0     0   5     FB3_7   54    I/O     
+(unused)              0       0     0   5     FB3_8   37    I/O     
+(unused)              0       0     0   5     FB3_9   42    I/O     
+(unused)              0       0     0   5     FB3_10  60    I/O     
+(unused)              0       0     0   5     FB3_11  52    I/O     
+(unused)              0       0     0   5     FB3_12  61    I/O     
+(unused)              0       0     0   5     FB3_13  63    I/O     
+(unused)              0       0     0   5     FB3_14  55    I/O     
+(unused)              0       0     0   5     FB3_15  56    I/O     
+(unused)              0       0     0   5     FB3_16  64    I/O     
+(unused)              0       0     0   5     FB3_17  58    I/O     
+(unused)              0       0     0   5     FB3_18  59    I/O     
+
+Signals Used by Logic in Function Block
+  1: CLK              
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+TEST                 X....................................... 1
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB4  ***********************************
+Number of function block inputs used/remaining:               0/54
+Number of signals used by logic mapping into function block:  0
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB4_1   65    I/O     
+(unused)              0       0     0   5     FB4_2   67    I/O     
+(unused)              0       0     0   5     FB4_3   71    I/O     
+(unused)              0       0     0   5     FB4_4   72    I/O     
+(unused)              0       0     0   5     FB4_5   68    I/O     
+(unused)              0       0     0   5     FB4_6   76    I/O     
+(unused)              0       0     0   5     FB4_7   77    I/O     
+(unused)              0       0     0   5     FB4_8   70    I/O     
+(unused)              0       0     0   5     FB4_9   66    I/O     
+(unused)              0       0     0   5     FB4_10  81    I/O     
+(unused)              0       0     0   5     FB4_11  74    I/O     
+(unused)              0       0     0   5     FB4_12  82    I/O     
+(unused)              0       0     0   5     FB4_13  85    I/O     
+(unused)              0       0     0   5     FB4_14  78    I/O     
+(unused)              0       0     0   5     FB4_15  89    I/O     
+(unused)              0       0     0   5     FB4_16  86    I/O     
+(unused)              0       0     0   5     FB4_17  90    I/O     
+(unused)              0       0     0   5     FB4_18  79    I/O     
+*******************************  Equations  ********************************
+
+********** Mapped Logic **********
+
+
+TEST <= CLK;
+
+Register Legend:
+ FDCPE (Q,D,C,CLR,PRE,CE); 
+ FTCPE (Q,D,C,CLR,PRE,CE); 
+ LDCP  (Q,D,G,CLR,PRE); 
+
+******************************  Device Pin Out *****************************
+
+Device : XC9572XL-10-TQ100
+
+
+   --------------------------------------------------  
+  /100 98  96  94  92  90  88  86  84  82  80  78  76  \
+ |   99  97  95  93  91  89  87  85  83  81  79  77    |
+ | 1                                               75  | 
+ | 2                                               74  | 
+ | 3                                               73  | 
+ | 4                                               72  | 
+ | 5                                               71  | 
+ | 6                                               70  | 
+ | 7                                               69  | 
+ | 8                                               68  | 
+ | 9                                               67  | 
+ | 10                                              66  | 
+ | 11                                              65  | 
+ | 12                                              64  | 
+ | 13               XC9572XL-10-TQ100              63  | 
+ | 14                                              62  | 
+ | 15                                              61  | 
+ | 16                                              60  | 
+ | 17                                              59  | 
+ | 18                                              58  | 
+ | 19                                              57  | 
+ | 20                                              56  | 
+ | 21                                              55  | 
+ | 22                                              54  | 
+ | 23                                              53  | 
+ | 24                                              52  | 
+ | 25                                              51  | 
+ |   27  29  31  33  35  37  39  41  43  45  47  49    |
+  \26  28  30  32  34  36  38  40  42  44  46  48  50  /
+   --------------------------------------------------  
+
+
+Pin Signal                         Pin Signal                        
+No. Name                           No. Name                          
+  1 KPR                              51 VCC                           
+  2 NC                               52 KPR                           
+  3 KPR                              53 KPR                           
+  4 KPR                              54 KPR                           
+  5 VCC                              55 KPR                           
+  6 KPR                              56 KPR                           
+  7 NC                               57 VCC                           
+  8 KPR                              58 KPR                           
+  9 KPR                              59 KPR                           
+ 10 KPR                              60 KPR                           
+ 11 KPR                              61 KPR                           
+ 12 KPR                              62 GND                           
+ 13 KPR                              63 KPR                           
+ 14 KPR                              64 KPR                           
+ 15 KPR                              65 KPR                           
+ 16 KPR                              66 KPR                           
+ 17 KPR                              67 KPR                           
+ 18 KPR                              68 KPR                           
+ 19 NC                               69 GND                           
+ 20 KPR                              70 KPR                           
+ 21 GND                              71 KPR                           
+ 22 CLK                              72 KPR                           
+ 23 KPR                              73 NC                            
+ 24 NC                               74 KPR                           
+ 25 KPR                              75 GND                           
+ 26 VCC                              76 KPR                           
+ 27 KPR                              77 KPR                           
+ 28 KPR                              78 KPR                           
+ 29 KPR                              79 KPR                           
+ 30 KPR                              80 NC                            
+ 31 GND                              81 KPR                           
+ 32 KPR                              82 KPR                           
+ 33 KPR                              83 TDO                           
+ 34 NC                               84 GND                           
+ 35 KPR                              85 KPR                           
+ 36 KPR                              86 KPR                           
+ 37 KPR                              87 KPR                           
+ 38 VCC                              88 VCC                           
+ 39 KPR                              89 KPR                           
+ 40 KPR                              90 KPR                           
+ 41 KPR                              91 KPR                           
+ 42 KPR                              92 KPR                           
+ 43 NC                               93 KPR                           
+ 44 GND                              94 KPR                           
+ 45 TDI                              95 KPR                           
+ 46 NC                               96 KPR                           
+ 47 TMS                              97 KPR                           
+ 48 TCK                              98 VCC                           
+ 49 TEST                             99 KPR                           
+ 50 KPR                             100 GND                           
+
+
+Legend :  NC  = Not Connected, unbonded pin
+         PGND = Unused I/O configured as additional Ground pin
+         TIE  = Unused I/O floating -- must tie to VCC, GND or other signal
+         KPR  = Unused I/O with weak keeper (leave unconnected)
+         VCC  = Dedicated Power Pin
+         GND  = Dedicated Ground Pin
+         TDI  = Test Data In, JTAG pin
+         TDO  = Test Data Out, JTAG pin
+         TCK  = Test Clock, JTAG pin
+         TMS  = Test Mode Select, JTAG pin
+  PROHIBITED  = User reserved pin
+****************************  Compiler Options  ****************************
+
+Following is a list of all global compiler options used by the fitter run.
+
+Device(s) Specified                         : xc9572xl-10-TQ100
+Optimization Method                         : SPEED
+Multi-Level Logic Optimization              : ON
+Ignore Timing Specifications                : OFF
+Default Register Power Up Value             : LOW
+Keep User Location Constraints              : ON
+What-You-See-Is-What-You-Get                : OFF
+Exhaustive Fitting                          : OFF
+Keep Unused Inputs                          : OFF
+Slew Rate                                   : FAST
+Power Mode                                  : STD
+Ground on Unused IOs                        : OFF
+Set I/O Pin Termination                     : KEEPER
+Global Clock Optimization                   : ON
+Global Set/Reset Optimization               : ON
+Global Ouput Enable Optimization            : ON
+Input Limit                                 : 54
+Pterm Limit                                 : 25

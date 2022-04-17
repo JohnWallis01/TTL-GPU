@@ -1,0 +1,18 @@
+xst -intstyle ise -ifn "E:/Libraries/Documents/TTL-GPU/CPLD-GPU-Xilinx-ISE/CPLD-GPU/Main.xst" -ofn "E:/Libraries/Documents/TTL-GPU/CPLD-GPU-Xilinx-ISE/CPLD-GPU/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc Main.ucf -p xc9572xl-TQ100-10 Main.ngc Main.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper Main.ngd 
+XSLTProcess Main_build.xml 
+tsim -intstyle ise Main Main.nga 
+taengine -intstyle ise -f Main -w --format html1 -l Main_html/tim/timing_report.htm 
+xst -intstyle ise -ifn "E:/Libraries/Documents/TTL-GPU/CPLD-GPU-Xilinx-ISE/CPLD-GPU/Main.xst" -ofn "E:/Libraries/Documents/TTL-GPU/CPLD-GPU-Xilinx-ISE/CPLD-GPU/Main.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc Main.ucf -p xc9572xl-TQ100-10 Main.ngc Main.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper Main.ngd 
+XSLTProcess Main_build.xml 
+tsim -intstyle ise Main Main.nga 
+taengine -intstyle ise -f Main -w --format html1 -l Main_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -n Main -i Main 
+ngdbuild -intstyle ise -dd _ngo -uc Main.ucf -p xc9572xl-TQ100-10 Main.ngc Main.ngd  
+cpldfit -intstyle ise -p xc9572xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper Main.ngd 
+XSLTProcess Main_build.xml 
+tsim -intstyle ise Main Main.nga 
+hprep6 -s IEEE1149 -n Main -i Main 

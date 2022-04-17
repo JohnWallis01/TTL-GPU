@@ -1,0 +1,5 @@
+# begin LFP file E:\Libraries\Documents\TTL-GPU\CPLD-GPU-Xilinx-ISE\CPLD-GPU\Main.lfp
+designfile Main.vhdl
+parttype xc9572xl-tq100-10
+bus_delimiter 0;
+set_busdelim_onsave 1;

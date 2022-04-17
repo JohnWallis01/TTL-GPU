@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name CY62136EV30LL-45ZSXI)(type Legacy)(uri E:/Libraries/Documents/MAX7000CPU-GEN3/Libraries/LIB_CY62136EV30LL-45ZSXI/CY62136EV30LL-45ZSXI/KiCad/CY62136EV30LL-45ZSXI.lib)(options "")(descr ""))
+  (lib (name Gen3Parts)(type Legacy)(uri E:/Libraries/Documents/MAX7000CPU-GEN3/S3-Kicad/Gen3Parts.lib)(options "")(descr ""))
+)

@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name GPU_Parts)(type Legacy)(uri "E:/Libraries/Documents/TTL-GPU/MAX7000-GPU Kicad Schematics/Libraries/GPU_Parts.lib")(options "")(descr ""))
+  (lib (name MAX7000CPU-Gen2_5-rescue)(type Legacy)(uri E:/Libraries/Documents/MAX7000CPU-GEN2.5/KICAD/MAX7000CPU-Gen2_5-rescue.lib)(options "")(descr ""))
+)

@@ -1,0 +1,12 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AT24C64B-10PU-2.7
+D Atmel AT24C64B-10PU-2.7 EEPROM Memory, 64kbit, 0.6us, 1.8  5.5 V 8-Pin PDIP
+$ENDCMP
+#
+$CMP EPM7128SLC84-15N
+D EPM7128SLC84-15N
+F https://www.intel.com/content/dam/altera-www/global/en_US/pdfs/literature/ds/archives/m7000.pdf
+$ENDCMP
+#
+#End Doc Library

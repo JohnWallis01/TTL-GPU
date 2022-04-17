@@ -1,0 +1,8 @@
+V3 3
+FL E:/Libraries/Documents/TTL-GPU/CPLD-GPU-Xilinx-ISE/CPLD-GPU/Main.vhdl 2021/11/24.12:24:01 P.20131013
+EN work/Main 1637728148 \
+      FL E:/Libraries/Documents/TTL-GPU/CPLD-GPU-Xilinx-ISE/CPLD-GPU/Main.vhdl \
+      PB ieee/std_logic_1164 1381692176
+AR work/Main/Behavioral 1637728149 \
+      FL E:/Libraries/Documents/TTL-GPU/CPLD-GPU-Xilinx-ISE/CPLD-GPU/Main.vhdl \
+      EN work/Main 1637728148
